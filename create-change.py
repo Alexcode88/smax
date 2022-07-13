@@ -10,8 +10,8 @@ def get_key():
     url = "https://us2-smax.saas.microfocus.com/auth/authentication-endpoint/authenticate/token?TENANTID=107894932"
     
     payload = json.dumps({
-        "Login": "",
-        "Password": ""})
+        "Login": "IntUser_PSDC",
+        "Password": "Testing@123456"})
     headers = {
         'Content-Type': 'application/json'}
 
