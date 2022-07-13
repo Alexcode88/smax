@@ -1,11 +1,4 @@
-import requests
-import json
-#from key2 import *
-
-import json, boto3, datetime, re, requests
-
-
-##########################################
+import requests, json
 def get_key():
     url = "https://us2-smax.saas.microfocus.com/auth/authentication-endpoint/authenticate/token?TENANTID=107894932"
     
