@@ -17,7 +17,7 @@ def get_key():
     response = requests.request("POST", url, headers=headers, data=payload)
     return response.text
 
-
+get_key()
 key = get_key()
 
 url = "https://us2-smax.saas.microfocus.com/rest/107894932/ems/bulk"
