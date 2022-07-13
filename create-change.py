@@ -1,3 +1,4 @@
+from ast import In
 import requests, json, os
 
 #https://medium.datadriveninvestor.com/accessing-github-secrets-in-python-d3e758d8089b#:~:text=To%20add%20a%20new%20secret,in%20your%20GitHub%20actions%20workflow.
@@ -6,11 +7,13 @@ In [ ]:
         SMAXUSER = os.environ['SMAXUSER']
         SMAXPW = os.environ['SMAXPW']
 '''
+SMAXUSER = os.environ['SMAXUSER']
+SMAXPW = os.environ['SMAXPW']
 def get_key():
     url = "https://us2-smax.saas.microfocus.com/auth/authentication-endpoint/authenticate/token?TENANTID=107894932"    
     payload = json.dumps({
-        "Login": "IntUser_PSDC",
-        "Password": "Testing@123456"})
+        "Login": SMAXUSER,
+        "Password": SMAXPW})
     headers = {
         'Content-Type': 'application/json'}
     response = requests.request("POST", url, headers=headers, data=payload)
