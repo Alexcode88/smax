@@ -17,7 +17,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    environment: smaxEnvi
+
     steps:
+    env:
+      SMAXUSER: ${{ secrets.SuperSecret }}
+      SMAXPW: ${{ secrets.EMAIL_PASSWORD }}
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
@@ -35,5 +40,5 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: run script
-      #run: |
-        #python3 create-change.py
+      run: |
+        python3 create-change.py
