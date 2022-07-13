@@ -1,18 +1,16 @@
 import requests, json
+
+
 def get_key():
-    url = "https://us2-smax.saas.microfocus.com/auth/authentication-endpoint/authenticate/token?TENANTID=107894932"
-    
+    url = "https://us2-smax.saas.microfocus.com/auth/authentication-endpoint/authenticate/token?TENANTID=107894932"    
     payload = json.dumps({
         "Login": "IntUser_PSDC",
         "Password": "Testing@123456"})
     headers = {
         'Content-Type': 'application/json'}
-
     response = requests.request("POST", url, headers=headers, data=payload)
-    #print(response.text)
     return response.text
 
-get_key()
 
 key = get_key()
 
