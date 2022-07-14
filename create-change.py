@@ -32,14 +32,18 @@ payload = json.dumps({
         "ReasonForChange": "BusinessRequirement",
         "AffectsActualService": "15797",
         "BasedOnChangeModel": "46415",
-        "DisplayLabel": "something new 02 python",
-        "Description": "<p>some</p>",
+        "DisplayLabel": "Using Git Actions",
+        "Description": "<p>Git in Action</p>",
         "UserOptions": "{\"complexTypeProperties\":[{\"properties\":{}}]}",
         "DataDomains": [
           "Public"
         ],
-        "Justification": "<p>some</p>",
-        "DetectedEntities": "{\"complexTypeProperties\":[]}"
+        "Justification": "<p>Testing Github</p>",
+        "DetectedEntities": "{\"complexTypeProperties\":[]}",
+        "Urgency":"SlightDisruption",
+        "DatacenterLocation_c":"12648",
+        "ChangeImplementationGroup_c":"736393",
+        "ChangeImplementationOwner_c":"367243"
       }
     }
   ],
