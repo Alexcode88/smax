@@ -1,3 +1,7 @@
+
+#Missing:
+# To update and change we need to parse the Id and LastUpdateTime
+# Actually we need to parse everyingthing from the get and deside what to update.
 import requests, json, os
 
 SMAXUSER = os.environ['SMAXUSER']
@@ -22,25 +26,28 @@ payload = json.dumps({
     {
       "entity_type": "Change",
       "properties": {
-        "AffectsActualService": "15797",
-        "BasedOnChangeModel": "46415",
-        "ChangeImplementationGroup_c":"736393",
-        "ChangeImplementationOwner_c":"367243",
-        "DatacenterLocation_c":"12648",
-        "DataDomains": [
-          "Public"
-        ],
-        "Description": "<p>Git in Action</p>",
-        "DetectedEntities": "{\"complexTypeProperties\":[]}",
-        "DisplayLabel": "Using Git Actions",
-        "Justification": "<p>Testing Github</p>",
-        "ReasonForChange": "BusinessRequirement",
-        "Urgency":"SlightDisruption",
-        "UserOptions": "{\"complexTypeProperties\":[{\"properties\":{}}]}"
+        "AffectsActualService": 15797,
+        "BasedOnChangeModel": 691245,
+        "Category": 15103,
+        "ChangeImplementationGroup_c": 10003,
+        "ChangeImplementationOwner_c": 748862,
+        "DatacenterLocation_c": 11331,
+        "DisplayLabel": "Python3-Working",
+        "Id": "751624",
+        "LastUpdateTime": 1657808380502,
+        "NotificationtocustomerRequired_c": "Yes_c",
+        "OwnedByGroup": 10003,
+        "PeerReviewGroup_c": 10004,
+        "Product_c": 14484,
+        "ReasonForChange": "Legislation",
+        "RequestedByPerson":748862,
+        "RiskAssessment": "NoRisk",
+        "Urgency": "SlightDisruption"
+
       }
     }
   ],
-  "operation": "CREATE"
+  "operation": "UPDATE"
 })
 headers = {
   'Content-Type': 'application/json',
