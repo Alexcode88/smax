@@ -1,0 +1,19 @@
+{
+  AffectsActualService,
+  BasedOnChangeModel,
+  Category,
+  ChangeImplementationGroup_c,
+  ChangeImplementationGroup_c,
+  ChangeImplementationOwner_c,
+  ChangeImplementationOwner_c,
+  DatacenterLocation_c,
+  NotificationtocustomerRequired_c,
+  OwnedByGroup,
+  PeerReviewGroup_c,
+  Product_c,
+  ReasonForChange,
+  RequestedByPerson,
+  RequestedByPerson,
+  RiskAssessment,
+  Urgency
+}
